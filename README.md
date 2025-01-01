@@ -2,6 +2,7 @@ vlab_trading
 REQUIREMENTS
 
     vorp_core
+vorp_menu
     vorp_inventory
 
 DESCRIPTION
