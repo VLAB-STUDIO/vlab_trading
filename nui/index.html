@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ingot price history with interactive charts">
+    <meta name="theme-color" content="#1c1f2b">
+    <title>Ingot Price History</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div id="gold-price-container" class="hidden">
+        <h1>Ingot Price History</h1>
+        
+        <div id="filter-buttons">
+            <button id="filter-day-btn">Last Day</button>
+            <button id="filter-week-btn">Last Week</button>
+            <button id="filter-month-btn">Last Month</button>
+            <button id="full-chart-btn">Full Chart</button>
+        </div>
+        
+        <canvas id="goldPriceChart" width="400" height="200"></canvas>
+        
+        <div id="chart-type-buttons">
+            <button id="line-chart-btn">Line Chart</button>
+            <button id="bar-chart-btn">Bar Chart</button>
+            <button id="area-chart-btn">Area Chart</button>
+        </div>
+    
+        <button id="close-btn">CLOSE</button>
+        
+        <div id="price-container">
+
+            <div id="price-info">
+                <p>🟡 Origin Price: <span id="origin-price">$0.00</span></p>
+                <p>🟡 Historical Minimum: <span id="min-price">$0.00</span></p>
+                <p>🟡 Historical Maximum: <span id="max-price">$0.00</span></p>
+                <p>🟡 Current Price: <span id="current-price">$0.00</span>
+                (<span id="price-difference" class="price-difference">+0.00%</span>)
+                </p>
+            </div>
+            
+            <div id="silver-price-info">
+                <p>⚪ Origin Price: <span id="silver-origin-price">$0.00</span></p>
+                <p>⚪ Historical Minimum: <span id="silver-min-price">$0.00</span></p>
+                <p>⚪ Historical Maximum: <span id="silver-max-price">$0.00</span></p>
+                <p>⚪ Current Price: <span id="silver-current-price">$0.00</span>
+                (<span id="silver-price-difference" class="price-difference">+0.00%</span>)
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
